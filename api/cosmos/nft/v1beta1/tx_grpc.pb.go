@@ -20,7 +20,7 @@ const _ = grpc.SupportPackageIsVersion9
 
 const (
 	Msg_Send_FullMethodName        = "/cosmos.nft.v1beta1.Msg/Send"
-	Msg_CreateClass_FullMethodName = "/cosmos.nft.v1beta1.Msg/CreateClass"
+	Msg_Createclass_FullMethodName = "/cosmos.nft.v1beta1.Msg/Createclass"
 )
 
 // MsgClient is the client API for Msg service.
@@ -32,8 +32,8 @@ type MsgClient interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOption) (*MsgSendResponse, error)
 	// New:
-	// CreateClass defines a method to create a new NFT class (collection).
-	CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error)
+	// Createclass defines a method to create a new NFT class (collection).
+	Createclass(ctx context.Context, in *MsgCreateclass, opts ...grpc.CallOption) (*MsgCreateclassResponse, error)
 }
 
 type msgClient struct {
@@ -54,10 +54,10 @@ func (c *msgClient) Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOpti
 	return out, nil
 }
 
-func (c *msgClient) CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error) {
+func (c *msgClient) Createclass(ctx context.Context, in *MsgCreateclass, opts ...grpc.CallOption) (*MsgCreateclassResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(MsgCreateClassResponse)
-	err := c.cc.Invoke(ctx, Msg_CreateClass_FullMethodName, in, out, cOpts...)
+	out := new(MsgCreateclassResponse)
+	err := c.cc.Invoke(ctx, Msg_Createclass_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
@@ -73,8 +73,8 @@ type MsgServer interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(context.Context, *MsgSend) (*MsgSendResponse, error)
 	// New:
-	// CreateClass defines a method to create a new NFT class (collection).
-	CreateClass(context.Context, *MsgCreateClass) (*MsgCreateClassResponse, error)
+	// Createclass defines a method to create a new NFT class (collection).
+	Createclass(context.Context, *MsgCreateclass) (*MsgCreateclassResponse, error)
 	mustEmbedUnimplementedMsgServer()
 }
 
@@ -88,8 +88,8 @@ type UnimplementedMsgServer struct{}
 func (UnimplementedMsgServer) Send(context.Context, *MsgSend) (*MsgSendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Send not implemented")
 }
-func (UnimplementedMsgServer) CreateClass(context.Context, *MsgCreateClass) (*MsgCreateClassResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateClass not implemented")
+func (UnimplementedMsgServer) Createclass(context.Context, *MsgCreateclass) (*MsgCreateclassResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Createclass not implemented")
 }
 func (UnimplementedMsgServer) mustEmbedUnimplementedMsgServer() {}
 func (UnimplementedMsgServer) testEmbeddedByValue()             {}
@@ -130,20 +130,20 @@ func _Msg_Send_Handler(srv interface{}, ctx context.Context, dec func(interface{
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Msg_CreateClass_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(MsgCreateClass)
+func _Msg_Createclass_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(MsgCreateclass)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(MsgServer).CreateClass(ctx, in)
+		return srv.(MsgServer).Createclass(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: Msg_CreateClass_FullMethodName,
+		FullMethod: Msg_Createclass_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(MsgServer).CreateClass(ctx, req.(*MsgCreateClass))
+		return srv.(MsgServer).Createclass(ctx, req.(*MsgCreateclass))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -160,8 +160,8 @@ var Msg_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _Msg_Send_Handler,
 		},
 		{
-			MethodName: "CreateClass",
-			Handler:    _Msg_CreateClass_Handler,
+			MethodName: "Createclass",
+			Handler:    _Msg_Createclass_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

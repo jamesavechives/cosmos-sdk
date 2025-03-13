@@ -53,7 +53,7 @@ func (k Keeper) Send(goCtx context.Context, msg *nft.MsgSend) (*nft.MsgSendRespo
 }
 
 // Createclass implements the MsgServer interface for creating a new Class.
-func (k Keeper) Createclass(goCtx context.Context, msg *nft.MsgCreateClass) (*nft.MsgCreateClassResponse, error) {
+func (k Keeper) Createclass(goCtx context.Context, msg *nft.MsgCreateclass) (*nft.MsgCreateclassResponse, error) {
 	// 1. Validate basic fields
 	if len(msg.Name) == 0 {
 		return nil, nft.ErrEmptyClassName
@@ -96,7 +96,7 @@ func (k Keeper) Createclass(goCtx context.Context, msg *nft.MsgCreateClass) (*nf
 	}
 
 	// 6. (Optional) Emit an event for analytics or watchers
-	if eventErr := ctx.EventManager().EmitTypedEvent(&nft.EventCreateClass{
+	if eventErr := ctx.EventManager().EmitTypedEvent(&nft.EventCreateclass{
 		ClassId: classID,
 		Creator: msg.Sender,
 	}); eventErr != nil {
@@ -104,5 +104,5 @@ func (k Keeper) Createclass(goCtx context.Context, msg *nft.MsgCreateClass) (*nf
 	}
 
 	// 7. Return a response
-	return &nft.MsgCreateClassResponse{ClassId: classID}, nil
+	return &nft.MsgCreateclassResponse{ClassId: classID}, nil
 }

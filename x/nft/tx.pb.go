@@ -140,8 +140,8 @@ func (m *MsgSendResponse) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_MsgSendResponse proto.InternalMessageInfo
 
-// MsgCreateClass is the request type for creating a new NFT Class.
-type MsgCreateClass struct {
+// MsgCreateclass is the request type for creating a new NFT Class.
+type MsgCreateclass struct {
 	Sender string `protobuf:"bytes,1,opt,name=sender,proto3" json:"sender,omitempty"`
 	// The unique identifier of the new class. Optional if you want to auto-generate.
 	Id string `protobuf:"bytes,2,opt,name=id,proto3" json:"id,omitempty"`
@@ -159,18 +159,18 @@ type MsgCreateClass struct {
 	Data *types.Any `protobuf:"bytes,8,opt,name=data,proto3" json:"data,omitempty"`
 }
 
-func (m *MsgCreateClass) Reset()         { *m = MsgCreateClass{} }
-func (m *MsgCreateClass) String() string { return proto.CompactTextString(m) }
-func (*MsgCreateClass) ProtoMessage()    {}
-func (*MsgCreateClass) Descriptor() ([]byte, []int) {
+func (m *MsgCreateclass) Reset()         { *m = MsgCreateclass{} }
+func (m *MsgCreateclass) String() string { return proto.CompactTextString(m) }
+func (*MsgCreateclass) ProtoMessage()    {}
+func (*MsgCreateclass) Descriptor() ([]byte, []int) {
 	return fileDescriptor_35818c6a0ef51f08, []int{2}
 }
-func (m *MsgCreateClass) XXX_Unmarshal(b []byte) error {
+func (m *MsgCreateclass) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
-func (m *MsgCreateClass) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+func (m *MsgCreateclass) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	if deterministic {
-		return xxx_messageInfo_MsgCreateClass.Marshal(b, m, deterministic)
+		return xxx_messageInfo_MsgCreateclass.Marshal(b, m, deterministic)
 	} else {
 		b = b[:cap(b)]
 		n, err := m.MarshalToSizedBuffer(b)
@@ -180,93 +180,93 @@ func (m *MsgCreateClass) XXX_Marshal(b []byte, deterministic bool) ([]byte, erro
 		return b[:n], nil
 	}
 }
-func (m *MsgCreateClass) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MsgCreateClass.Merge(m, src)
+func (m *MsgCreateclass) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MsgCreateclass.Merge(m, src)
 }
-func (m *MsgCreateClass) XXX_Size() int {
+func (m *MsgCreateclass) XXX_Size() int {
 	return m.Size()
 }
-func (m *MsgCreateClass) XXX_DiscardUnknown() {
-	xxx_messageInfo_MsgCreateClass.DiscardUnknown(m)
+func (m *MsgCreateclass) XXX_DiscardUnknown() {
+	xxx_messageInfo_MsgCreateclass.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_MsgCreateClass proto.InternalMessageInfo
+var xxx_messageInfo_MsgCreateclass proto.InternalMessageInfo
 
-func (m *MsgCreateClass) GetSender() string {
+func (m *MsgCreateclass) GetSender() string {
 	if m != nil {
 		return m.Sender
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetId() string {
+func (m *MsgCreateclass) GetId() string {
 	if m != nil {
 		return m.Id
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetName() string {
+func (m *MsgCreateclass) GetName() string {
 	if m != nil {
 		return m.Name
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetSymbol() string {
+func (m *MsgCreateclass) GetSymbol() string {
 	if m != nil {
 		return m.Symbol
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetDescription() string {
+func (m *MsgCreateclass) GetDescription() string {
 	if m != nil {
 		return m.Description
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetUri() string {
+func (m *MsgCreateclass) GetUri() string {
 	if m != nil {
 		return m.Uri
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetUriHash() string {
+func (m *MsgCreateclass) GetUriHash() string {
 	if m != nil {
 		return m.UriHash
 	}
 	return ""
 }
 
-func (m *MsgCreateClass) GetData() *types.Any {
+func (m *MsgCreateclass) GetData() *types.Any {
 	if m != nil {
 		return m.Data
 	}
 	return nil
 }
 
-// MsgCreateClassResponse is the response type for the Msg/CreateClass RPC.
-type MsgCreateClassResponse struct {
-	// The final ID of the new class (could match `MsgCreateClass.id` if you used it directly
+// MsgCreateclassResponse is the response type for the Msg/Createclass RPC.
+type MsgCreateclassResponse struct {
+	// The final ID of the new class (could match `MsgCreateclass.id` if you used it directly
 	// or might be an auto-generated ID you produce in your keeper logic).
 	ClassId string `protobuf:"bytes,1,opt,name=class_id,json=classId,proto3" json:"class_id,omitempty"`
 }
 
-func (m *MsgCreateClassResponse) Reset()         { *m = MsgCreateClassResponse{} }
-func (m *MsgCreateClassResponse) String() string { return proto.CompactTextString(m) }
-func (*MsgCreateClassResponse) ProtoMessage()    {}
-func (*MsgCreateClassResponse) Descriptor() ([]byte, []int) {
+func (m *MsgCreateclassResponse) Reset()         { *m = MsgCreateclassResponse{} }
+func (m *MsgCreateclassResponse) String() string { return proto.CompactTextString(m) }
+func (*MsgCreateclassResponse) ProtoMessage()    {}
+func (*MsgCreateclassResponse) Descriptor() ([]byte, []int) {
 	return fileDescriptor_35818c6a0ef51f08, []int{3}
 }
-func (m *MsgCreateClassResponse) XXX_Unmarshal(b []byte) error {
+func (m *MsgCreateclassResponse) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
-func (m *MsgCreateClassResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+func (m *MsgCreateclassResponse) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	if deterministic {
-		return xxx_messageInfo_MsgCreateClassResponse.Marshal(b, m, deterministic)
+		return xxx_messageInfo_MsgCreateclassResponse.Marshal(b, m, deterministic)
 	} else {
 		b = b[:cap(b)]
 		n, err := m.MarshalToSizedBuffer(b)
@@ -276,19 +276,19 @@ func (m *MsgCreateClassResponse) XXX_Marshal(b []byte, deterministic bool) ([]by
 		return b[:n], nil
 	}
 }
-func (m *MsgCreateClassResponse) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_MsgCreateClassResponse.Merge(m, src)
+func (m *MsgCreateclassResponse) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_MsgCreateclassResponse.Merge(m, src)
 }
-func (m *MsgCreateClassResponse) XXX_Size() int {
+func (m *MsgCreateclassResponse) XXX_Size() int {
 	return m.Size()
 }
-func (m *MsgCreateClassResponse) XXX_DiscardUnknown() {
-	xxx_messageInfo_MsgCreateClassResponse.DiscardUnknown(m)
+func (m *MsgCreateclassResponse) XXX_DiscardUnknown() {
+	xxx_messageInfo_MsgCreateclassResponse.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_MsgCreateClassResponse proto.InternalMessageInfo
+var xxx_messageInfo_MsgCreateclassResponse proto.InternalMessageInfo
 
-func (m *MsgCreateClassResponse) GetClassId() string {
+func (m *MsgCreateclassResponse) GetClassId() string {
 	if m != nil {
 		return m.ClassId
 	}
@@ -298,44 +298,44 @@ func (m *MsgCreateClassResponse) GetClassId() string {
 func init() {
 	proto.RegisterType((*MsgSend)(nil), "cosmos.nft.v1beta1.MsgSend")
 	proto.RegisterType((*MsgSendResponse)(nil), "cosmos.nft.v1beta1.MsgSendResponse")
-	proto.RegisterType((*MsgCreateClass)(nil), "cosmos.nft.v1beta1.MsgCreateClass")
-	proto.RegisterType((*MsgCreateClassResponse)(nil), "cosmos.nft.v1beta1.MsgCreateClassResponse")
+	proto.RegisterType((*MsgCreateclass)(nil), "cosmos.nft.v1beta1.MsgCreateclass")
+	proto.RegisterType((*MsgCreateclassResponse)(nil), "cosmos.nft.v1beta1.MsgCreateclassResponse")
 }
 
 func init() { proto.RegisterFile("cosmos/nft/v1beta1/tx.proto", fileDescriptor_35818c6a0ef51f08) }
 
 var fileDescriptor_35818c6a0ef51f08 = []byte{
-	// 470 bytes of a gzipped FileDescriptorProto
+	// 468 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x53, 0x31, 0x6f, 0x13, 0x31,
-	0x18, 0x8d, 0x93, 0x34, 0x09, 0x8e, 0x54, 0xc0, 0xaa, 0xca, 0xf5, 0x2a, 0x9d, 0xa2, 0xb0, 0x44,
-	0x11, 0xf8, 0x48, 0xcb, 0xc4, 0xd6, 0x76, 0x29, 0x43, 0x96, 0xeb, 0x86, 0x84, 0x22, 0x27, 0x76,
-	0x2e, 0x16, 0x89, 0x1d, 0xf9, 0x73, 0xa2, 0x66, 0x43, 0x88, 0x1f, 0xc0, 0xdf, 0x60, 0xeb, 0x00,
-	0xff, 0x81, 0xb1, 0x62, 0x62, 0x44, 0xc9, 0xd0, 0xbf, 0x81, 0xce, 0xe7, 0x54, 0x29, 0x88, 0xa6,
-	0xd3, 0xf9, 0xfb, 0xde, 0xfb, 0xec, 0xe7, 0xf7, 0xce, 0xf8, 0x70, 0xa0, 0x61, 0xa2, 0x21, 0x56,
-	0x43, 0x1b, 0xcf, 0x3b, 0x7d, 0x61, 0x59, 0x27, 0xb6, 0x97, 0x74, 0x6a, 0xb4, 0xd5, 0x84, 0xe4,
-	0x20, 0x55, 0x43, 0x4b, 0x3d, 0x18, 0x3e, 0xf3, 0x03, 0x13, 0x48, 0xe3, 0x79, 0x27, 0xfb, 0xe4,
-	0xe4, 0xf0, 0x20, 0x07, 0x7a, 0xae, 0x8a, 0xfd, 0xa4, 0x87, 0x52, 0xad, 0xd3, 0xb1, 0x88, 0x5d,
-	0xd5, 0x9f, 0x0d, 0x63, 0xa6, 0x16, 0x39, 0xd4, 0xfc, 0x8a, 0x70, 0xb5, 0x0b, 0xe9, 0x85, 0x50,
-	0x9c, 0x1c, 0xe0, 0xda, 0x60, 0xcc, 0x00, 0x7a, 0x92, 0x07, 0xa8, 0x81, 0x5a, 0x8f, 0x92, 0xaa,
-	0xab, 0xdf, 0x72, 0xb2, 0x8b, 0x8b, 0x92, 0x07, 0x45, 0xd7, 0x2c, 0x4a, 0x4e, 0x5e, 0xe1, 0x0a,
-	0x08, 0xc5, 0x85, 0x09, 0x4a, 0x59, 0xef, 0x34, 0xf8, 0xf9, 0xed, 0xe5, 0x9e, 0x3f, 0xf3, 0x84,
-	0x73, 0x23, 0x00, 0x2e, 0xac, 0x91, 0x2a, 0x4d, 0x3c, 0x8f, 0xbc, 0xc6, 0x35, 0x23, 0x06, 0x42,
-	0xce, 0x85, 0x09, 0xca, 0x5b, 0x66, 0x6e, 0x99, 0x6f, 0xea, 0x9f, 0x6e, 0xae, 0xda, 0x7e, 0x8b,
-	0xe6, 0x53, 0xfc, 0xd8, 0x4b, 0x4d, 0x04, 0x4c, 0xb5, 0x02, 0xd1, 0xfc, 0x5c, 0xc4, 0xbb, 0x5d,
-	0x48, 0xcf, 0x8c, 0x60, 0x56, 0x9c, 0x65, 0x62, 0x37, 0xa4, 0xa1, 0x07, 0x4a, 0xfb, 0xfb, 0x72,
-	0x04, 0x97, 0x15, 0x9b, 0x88, 0xfc, 0x6a, 0x89, 0x5b, 0x93, 0x7d, 0x5c, 0x81, 0xc5, 0xa4, 0xaf,
-	0xc7, 0xb9, 0xf8, 0xc4, 0x57, 0xa4, 0x81, 0xeb, 0x5c, 0xc0, 0xc0, 0xc8, 0xa9, 0x95, 0x5a, 0x05,
-	0x3b, 0x0e, 0xdc, 0x6c, 0x91, 0x27, 0xb8, 0x34, 0x33, 0x32, 0xa8, 0x38, 0x24, 0x5b, 0x66, 0x3e,
-	0xcf, 0x8c, 0xec, 0x8d, 0x18, 0x8c, 0x82, 0x6a, 0xee, 0xf3, 0xcc, 0xc8, 0x73, 0x06, 0x23, 0xd2,
-	0xc2, 0x65, 0xce, 0x2c, 0x0b, 0x6a, 0x0d, 0xd4, 0xaa, 0x1f, 0xed, 0xd1, 0x3c, 0x38, 0xba, 0x0e,
-	0x8e, 0x9e, 0xa8, 0x45, 0xe2, 0x18, 0x77, 0x9d, 0x39, 0xc6, 0xfb, 0x77, 0x5d, 0x58, 0x1b, 0x74,
-	0x4f, 0xa6, 0x47, 0xdf, 0x11, 0x2e, 0x75, 0x21, 0x25, 0xe7, 0xb8, 0xec, 0xe2, 0x3f, 0xa4, 0xff,
-	0xfe, 0x6e, 0xd4, 0x1b, 0x1e, 0x3e, 0xbf, 0x07, 0xbc, 0x3d, 0xec, 0x3d, 0xae, 0x6f, 0x26, 0xd1,
-	0xfc, 0xcf, 0xcc, 0x06, 0x27, 0x6c, 0x6f, 0xe7, 0xac, 0xb7, 0x0f, 0x77, 0x3e, 0xde, 0x5c, 0xb5,
-	0xd1, 0xe9, 0x8b, 0x1f, 0xcb, 0x08, 0x5d, 0x2f, 0x23, 0xf4, 0x7b, 0x19, 0xa1, 0x2f, 0xab, 0xa8,
-	0x70, 0xbd, 0x8a, 0x0a, 0xbf, 0x56, 0x51, 0xe1, 0x9d, 0x7f, 0x2f, 0xc0, 0x3f, 0x50, 0xa9, 0xe3,
-	0xcb, 0xec, 0x51, 0xf5, 0x2b, 0xce, 0xbb, 0xe3, 0x3f, 0x01, 0x00, 0x00, 0xff, 0xff, 0xf5, 0x87,
-	0xee, 0xc4, 0x69, 0x03, 0x00, 0x00,
+	0x18, 0x8d, 0x93, 0x34, 0x09, 0x8e, 0x54, 0xc0, 0xaa, 0x8a, 0x9b, 0x4a, 0xa7, 0x28, 0x2c, 0x51,
+	0x04, 0x3e, 0xd2, 0x32, 0xb1, 0xb5, 0x2c, 0x65, 0xc8, 0x72, 0xdd, 0x90, 0x50, 0xe4, 0xc4, 0xce,
+	0xc5, 0x22, 0xb1, 0x23, 0x7f, 0x4e, 0xd4, 0x6c, 0x08, 0xf1, 0x03, 0xf8, 0x1b, 0x6c, 0x1d, 0xe0,
+	0x3f, 0x30, 0x56, 0x4c, 0x8c, 0x28, 0x19, 0xfa, 0x37, 0xd0, 0xf9, 0x9c, 0x2a, 0x05, 0xd1, 0x32,
+	0x9d, 0xbf, 0xef, 0xbd, 0xcf, 0x7e, 0x7e, 0xef, 0x8c, 0x0f, 0x87, 0x06, 0xa6, 0x06, 0x62, 0x3d,
+	0x72, 0xf1, 0xa2, 0x3b, 0x90, 0x8e, 0x77, 0x63, 0x77, 0xc1, 0x66, 0xd6, 0x38, 0x43, 0x48, 0x0e,
+	0x32, 0x3d, 0x72, 0x2c, 0x80, 0x8d, 0x27, 0x61, 0x60, 0x0a, 0x69, 0xbc, 0xe8, 0x66, 0x9f, 0x9c,
+	0xdc, 0x38, 0xc8, 0x81, 0xbe, 0xaf, 0xe2, 0x30, 0x19, 0xa0, 0xd4, 0x98, 0x74, 0x22, 0x63, 0x5f,
+	0x0d, 0xe6, 0xa3, 0x98, 0xeb, 0x65, 0x0e, 0xb5, 0xbe, 0x20, 0x5c, 0xed, 0x41, 0x7a, 0x2e, 0xb5,
+	0x20, 0x07, 0xb8, 0x36, 0x9c, 0x70, 0x80, 0xbe, 0x12, 0x14, 0x35, 0x51, 0xfb, 0x41, 0x52, 0xf5,
+	0xf5, 0x1b, 0x41, 0x76, 0x71, 0x51, 0x09, 0x5a, 0xf4, 0xcd, 0xa2, 0x12, 0xe4, 0x05, 0xae, 0x80,
+	0xd4, 0x42, 0x5a, 0x5a, 0xca, 0x7a, 0xa7, 0xf4, 0xc7, 0xd7, 0xe7, 0x7b, 0xe1, 0xcc, 0x13, 0x21,
+	0xac, 0x04, 0x38, 0x77, 0x56, 0xe9, 0x34, 0x09, 0x3c, 0xf2, 0x12, 0xd7, 0xac, 0x1c, 0x4a, 0xb5,
+	0x90, 0x96, 0x96, 0xef, 0x99, 0xb9, 0x61, 0xbe, 0xaa, 0x7f, 0xbc, 0xbe, 0xec, 0x84, 0x2d, 0x5a,
+	0x8f, 0xf1, 0xc3, 0x20, 0x35, 0x91, 0x30, 0x33, 0x1a, 0x64, 0xeb, 0x53, 0x11, 0xef, 0xf6, 0x20,
+	0x7d, 0x6d, 0x25, 0x77, 0xd2, 0x8b, 0xdd, 0x92, 0x86, 0xfe, 0x53, 0xda, 0x9f, 0x97, 0x23, 0xb8,
+	0xac, 0xf9, 0x54, 0xe6, 0x57, 0x4b, 0xfc, 0x9a, 0xec, 0xe3, 0x0a, 0x2c, 0xa7, 0x03, 0x33, 0xc9,
+	0xc5, 0x27, 0xa1, 0x22, 0x4d, 0x5c, 0x17, 0x12, 0x86, 0x56, 0xcd, 0x9c, 0x32, 0x9a, 0xee, 0x78,
+	0x70, 0xbb, 0x45, 0x1e, 0xe1, 0xd2, 0xdc, 0x2a, 0x5a, 0xf1, 0x48, 0xb6, 0xcc, 0x7c, 0x9e, 0x5b,
+	0xd5, 0x1f, 0x73, 0x18, 0xd3, 0x6a, 0xee, 0xf3, 0xdc, 0xaa, 0x33, 0x0e, 0x63, 0xd2, 0xc6, 0x65,
+	0xc1, 0x1d, 0xa7, 0xb5, 0x26, 0x6a, 0xd7, 0x8f, 0xf6, 0x58, 0x1e, 0x1c, 0xdb, 0x04, 0xc7, 0x4e,
+	0xf4, 0x32, 0xf1, 0x8c, 0xdb, 0xce, 0x1c, 0xe3, 0xfd, 0xdb, 0x2e, 0x6c, 0x0c, 0xba, 0x23, 0xd3,
+	0xa3, 0x6f, 0x08, 0x97, 0x7a, 0x90, 0x92, 0x33, 0x5c, 0xf6, 0xf1, 0x1f, 0xb2, 0xbf, 0x7f, 0x37,
+	0x16, 0x0c, 0x6f, 0x3c, 0xbd, 0x03, 0xbc, 0x39, 0xec, 0x1d, 0xae, 0x6f, 0x27, 0xd1, 0xfa, 0xc7,
+	0xcc, 0x16, 0xa7, 0xd1, 0xb9, 0x9f, 0xb3, 0xd9, 0xbe, 0xb1, 0xf3, 0xe1, 0xfa, 0xb2, 0x83, 0x4e,
+	0x9f, 0x7d, 0x5f, 0x45, 0xe8, 0x6a, 0x15, 0xa1, 0x5f, 0xab, 0x08, 0x7d, 0x5e, 0x47, 0x85, 0xab,
+	0x75, 0x54, 0xf8, 0xb9, 0x8e, 0x0a, 0x6f, 0xc3, 0x7b, 0x01, 0xf1, 0x9e, 0x29, 0x13, 0x5f, 0x64,
+	0x8f, 0x6a, 0x50, 0xf1, 0xde, 0x1d, 0xff, 0x0e, 0x00, 0x00, 0xff, 0xff, 0x56, 0x70, 0xb1, 0xd7,
+	0x69, 0x03, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -353,8 +353,8 @@ type MsgClient interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOption) (*MsgSendResponse, error)
 	// New:
-	// CreateClass defines a method to create a new NFT class (collection).
-	CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error)
+	// Createclass defines a method to create a new NFT class (collection).
+	Createclass(ctx context.Context, in *MsgCreateclass, opts ...grpc.CallOption) (*MsgCreateclassResponse, error)
 }
 
 type msgClient struct {
@@ -374,9 +374,9 @@ func (c *msgClient) Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOpti
 	return out, nil
 }
 
-func (c *msgClient) CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error) {
-	out := new(MsgCreateClassResponse)
-	err := c.cc.Invoke(ctx, "/cosmos.nft.v1beta1.Msg/CreateClass", in, out, opts...)
+func (c *msgClient) Createclass(ctx context.Context, in *MsgCreateclass, opts ...grpc.CallOption) (*MsgCreateclassResponse, error) {
+	out := new(MsgCreateclassResponse)
+	err := c.cc.Invoke(ctx, "/cosmos.nft.v1beta1.Msg/Createclass", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -388,8 +388,8 @@ type MsgServer interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(context.Context, *MsgSend) (*MsgSendResponse, error)
 	// New:
-	// CreateClass defines a method to create a new NFT class (collection).
-	CreateClass(context.Context, *MsgCreateClass) (*MsgCreateClassResponse, error)
+	// Createclass defines a method to create a new NFT class (collection).
+	Createclass(context.Context, *MsgCreateclass) (*MsgCreateclassResponse, error)
 }
 
 // UnimplementedMsgServer can be embedded to have forward compatible implementations.
@@ -399,8 +399,8 @@ type UnimplementedMsgServer struct {
 func (*UnimplementedMsgServer) Send(ctx context.Context, req *MsgSend) (*MsgSendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Send not implemented")
 }
-func (*UnimplementedMsgServer) CreateClass(ctx context.Context, req *MsgCreateClass) (*MsgCreateClassResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateClass not implemented")
+func (*UnimplementedMsgServer) Createclass(ctx context.Context, req *MsgCreateclass) (*MsgCreateclassResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Createclass not implemented")
 }
 
 func RegisterMsgServer(s grpc1.Server, srv MsgServer) {
@@ -425,20 +425,20 @@ func _Msg_Send_Handler(srv interface{}, ctx context.Context, dec func(interface{
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Msg_CreateClass_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(MsgCreateClass)
+func _Msg_Createclass_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(MsgCreateclass)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(MsgServer).CreateClass(ctx, in)
+		return srv.(MsgServer).Createclass(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/cosmos.nft.v1beta1.Msg/CreateClass",
+		FullMethod: "/cosmos.nft.v1beta1.Msg/Createclass",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(MsgServer).CreateClass(ctx, req.(*MsgCreateClass))
+		return srv.(MsgServer).Createclass(ctx, req.(*MsgCreateclass))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -453,8 +453,8 @@ var _Msg_serviceDesc = grpc.ServiceDesc{
 			Handler:    _Msg_Send_Handler,
 		},
 		{
-			MethodName: "CreateClass",
-			Handler:    _Msg_CreateClass_Handler,
+			MethodName: "Createclass",
+			Handler:    _Msg_Createclass_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
@@ -535,7 +535,7 @@ func (m *MsgSendResponse) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	return len(dAtA) - i, nil
 }
 
-func (m *MsgCreateClass) Marshal() (dAtA []byte, err error) {
+func (m *MsgCreateclass) Marshal() (dAtA []byte, err error) {
 	size := m.Size()
 	dAtA = make([]byte, size)
 	n, err := m.MarshalToSizedBuffer(dAtA[:size])
@@ -545,12 +545,12 @@ func (m *MsgCreateClass) Marshal() (dAtA []byte, err error) {
 	return dAtA[:n], nil
 }
 
-func (m *MsgCreateClass) MarshalTo(dAtA []byte) (int, error) {
+func (m *MsgCreateclass) MarshalTo(dAtA []byte) (int, error) {
 	size := m.Size()
 	return m.MarshalToSizedBuffer(dAtA[:size])
 }
 
-func (m *MsgCreateClass) MarshalToSizedBuffer(dAtA []byte) (int, error) {
+func (m *MsgCreateclass) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	i := len(dAtA)
 	_ = i
 	var l int
@@ -619,7 +619,7 @@ func (m *MsgCreateClass) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	return len(dAtA) - i, nil
 }
 
-func (m *MsgCreateClassResponse) Marshal() (dAtA []byte, err error) {
+func (m *MsgCreateclassResponse) Marshal() (dAtA []byte, err error) {
 	size := m.Size()
 	dAtA = make([]byte, size)
 	n, err := m.MarshalToSizedBuffer(dAtA[:size])
@@ -629,12 +629,12 @@ func (m *MsgCreateClassResponse) Marshal() (dAtA []byte, err error) {
 	return dAtA[:n], nil
 }
 
-func (m *MsgCreateClassResponse) MarshalTo(dAtA []byte) (int, error) {
+func (m *MsgCreateclassResponse) MarshalTo(dAtA []byte) (int, error) {
 	size := m.Size()
 	return m.MarshalToSizedBuffer(dAtA[:size])
 }
 
-func (m *MsgCreateClassResponse) MarshalToSizedBuffer(dAtA []byte) (int, error) {
+func (m *MsgCreateclassResponse) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	i := len(dAtA)
 	_ = i
 	var l int
@@ -694,7 +694,7 @@ func (m *MsgSendResponse) Size() (n int) {
 	return n
 }
 
-func (m *MsgCreateClass) Size() (n int) {
+func (m *MsgCreateclass) Size() (n int) {
 	if m == nil {
 		return 0
 	}
@@ -735,7 +735,7 @@ func (m *MsgCreateClass) Size() (n int) {
 	return n
 }
 
-func (m *MsgCreateClassResponse) Size() (n int) {
+func (m *MsgCreateclassResponse) Size() (n int) {
 	if m == nil {
 		return 0
 	}
@@ -982,7 +982,7 @@ func (m *MsgSendResponse) Unmarshal(dAtA []byte) error {
 	}
 	return nil
 }
-func (m *MsgCreateClass) Unmarshal(dAtA []byte) error {
+func (m *MsgCreateclass) Unmarshal(dAtA []byte) error {
 	l := len(dAtA)
 	iNdEx := 0
 	for iNdEx < l {
@@ -1005,10 +1005,10 @@ func (m *MsgCreateClass) Unmarshal(dAtA []byte) error {
 		fieldNum := int32(wire >> 3)
 		wireType := int(wire & 0x7)
 		if wireType == 4 {
-			return fmt.Errorf("proto: MsgCreateClass: wiretype end group for non-group")
+			return fmt.Errorf("proto: MsgCreateclass: wiretype end group for non-group")
 		}
 		if fieldNum <= 0 {
-			return fmt.Errorf("proto: MsgCreateClass: illegal tag %d (wire type %d)", fieldNum, wire)
+			return fmt.Errorf("proto: MsgCreateclass: illegal tag %d (wire type %d)", fieldNum, wire)
 		}
 		switch fieldNum {
 		case 1:
@@ -1292,7 +1292,7 @@ func (m *MsgCreateClass) Unmarshal(dAtA []byte) error {
 	}
 	return nil
 }
-func (m *MsgCreateClassResponse) Unmarshal(dAtA []byte) error {
+func (m *MsgCreateclassResponse) Unmarshal(dAtA []byte) error {
 	l := len(dAtA)
 	iNdEx := 0
 	for iNdEx < l {
@@ -1315,10 +1315,10 @@ func (m *MsgCreateClassResponse) Unmarshal(dAtA []byte) error {
 		fieldNum := int32(wire >> 3)
 		wireType := int(wire & 0x7)
 		if wireType == 4 {
-			return fmt.Errorf("proto: MsgCreateClassResponse: wiretype end group for non-group")
+			return fmt.Errorf("proto: MsgCreateclassResponse: wiretype end group for non-group")
 		}
 		if fieldNum <= 0 {
-			return fmt.Errorf("proto: MsgCreateClassResponse: illegal tag %d (wire type %d)", fieldNum, wire)
+			return fmt.Errorf("proto: MsgCreateclassResponse: illegal tag %d (wire type %d)", fieldNum, wire)
 		}
 		switch fieldNum {
 		case 1:

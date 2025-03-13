@@ -984,39 +984,39 @@ func (x *fastReflection_MsgSendResponse) ProtoMethods() *protoiface.Methods {
 }
 
 var (
-	md_MsgCreateClass             protoreflect.MessageDescriptor
-	fd_MsgCreateClass_sender      protoreflect.FieldDescriptor
-	fd_MsgCreateClass_id          protoreflect.FieldDescriptor
-	fd_MsgCreateClass_name        protoreflect.FieldDescriptor
-	fd_MsgCreateClass_symbol      protoreflect.FieldDescriptor
-	fd_MsgCreateClass_description protoreflect.FieldDescriptor
-	fd_MsgCreateClass_uri         protoreflect.FieldDescriptor
-	fd_MsgCreateClass_uri_hash    protoreflect.FieldDescriptor
-	fd_MsgCreateClass_data        protoreflect.FieldDescriptor
+	md_MsgCreateclass             protoreflect.MessageDescriptor
+	fd_MsgCreateclass_sender      protoreflect.FieldDescriptor
+	fd_MsgCreateclass_id          protoreflect.FieldDescriptor
+	fd_MsgCreateclass_name        protoreflect.FieldDescriptor
+	fd_MsgCreateclass_symbol      protoreflect.FieldDescriptor
+	fd_MsgCreateclass_description protoreflect.FieldDescriptor
+	fd_MsgCreateclass_uri         protoreflect.FieldDescriptor
+	fd_MsgCreateclass_uri_hash    protoreflect.FieldDescriptor
+	fd_MsgCreateclass_data        protoreflect.FieldDescriptor
 )
 
 func init() {
 	file_cosmos_nft_v1beta1_tx_proto_init()
-	md_MsgCreateClass = File_cosmos_nft_v1beta1_tx_proto.Messages().ByName("MsgCreateClass")
-	fd_MsgCreateClass_sender = md_MsgCreateClass.Fields().ByName("sender")
-	fd_MsgCreateClass_id = md_MsgCreateClass.Fields().ByName("id")
-	fd_MsgCreateClass_name = md_MsgCreateClass.Fields().ByName("name")
-	fd_MsgCreateClass_symbol = md_MsgCreateClass.Fields().ByName("symbol")
-	fd_MsgCreateClass_description = md_MsgCreateClass.Fields().ByName("description")
-	fd_MsgCreateClass_uri = md_MsgCreateClass.Fields().ByName("uri")
-	fd_MsgCreateClass_uri_hash = md_MsgCreateClass.Fields().ByName("uri_hash")
-	fd_MsgCreateClass_data = md_MsgCreateClass.Fields().ByName("data")
+	md_MsgCreateclass = File_cosmos_nft_v1beta1_tx_proto.Messages().ByName("MsgCreateclass")
+	fd_MsgCreateclass_sender = md_MsgCreateclass.Fields().ByName("sender")
+	fd_MsgCreateclass_id = md_MsgCreateclass.Fields().ByName("id")
+	fd_MsgCreateclass_name = md_MsgCreateclass.Fields().ByName("name")
+	fd_MsgCreateclass_symbol = md_MsgCreateclass.Fields().ByName("symbol")
+	fd_MsgCreateclass_description = md_MsgCreateclass.Fields().ByName("description")
+	fd_MsgCreateclass_uri = md_MsgCreateclass.Fields().ByName("uri")
+	fd_MsgCreateclass_uri_hash = md_MsgCreateclass.Fields().ByName("uri_hash")
+	fd_MsgCreateclass_data = md_MsgCreateclass.Fields().ByName("data")
 }
 
-var _ protoreflect.Message = (*fastReflection_MsgCreateClass)(nil)
+var _ protoreflect.Message = (*fastReflection_MsgCreateclass)(nil)
 
-type fastReflection_MsgCreateClass MsgCreateClass
+type fastReflection_MsgCreateclass MsgCreateclass
 
-func (x *MsgCreateClass) ProtoReflect() protoreflect.Message {
-	return (*fastReflection_MsgCreateClass)(x)
+func (x *MsgCreateclass) ProtoReflect() protoreflect.Message {
+	return (*fastReflection_MsgCreateclass)(x)
 }
 
-func (x *MsgCreateClass) slowProtoReflect() protoreflect.Message {
+func (x *MsgCreateclass) slowProtoReflect() protoreflect.Message {
 	mi := &file_cosmos_nft_v1beta1_tx_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -1028,43 +1028,43 @@ func (x *MsgCreateClass) slowProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-var _fastReflection_MsgCreateClass_messageType fastReflection_MsgCreateClass_messageType
-var _ protoreflect.MessageType = fastReflection_MsgCreateClass_messageType{}
+var _fastReflection_MsgCreateclass_messageType fastReflection_MsgCreateclass_messageType
+var _ protoreflect.MessageType = fastReflection_MsgCreateclass_messageType{}
 
-type fastReflection_MsgCreateClass_messageType struct{}
+type fastReflection_MsgCreateclass_messageType struct{}
 
-func (x fastReflection_MsgCreateClass_messageType) Zero() protoreflect.Message {
-	return (*fastReflection_MsgCreateClass)(nil)
+func (x fastReflection_MsgCreateclass_messageType) Zero() protoreflect.Message {
+	return (*fastReflection_MsgCreateclass)(nil)
 }
-func (x fastReflection_MsgCreateClass_messageType) New() protoreflect.Message {
-	return new(fastReflection_MsgCreateClass)
+func (x fastReflection_MsgCreateclass_messageType) New() protoreflect.Message {
+	return new(fastReflection_MsgCreateclass)
 }
-func (x fastReflection_MsgCreateClass_messageType) Descriptor() protoreflect.MessageDescriptor {
-	return md_MsgCreateClass
+func (x fastReflection_MsgCreateclass_messageType) Descriptor() protoreflect.MessageDescriptor {
+	return md_MsgCreateclass
 }
 
 // Descriptor returns message descriptor, which contains only the protobuf
 // type information for the message.
-func (x *fastReflection_MsgCreateClass) Descriptor() protoreflect.MessageDescriptor {
-	return md_MsgCreateClass
+func (x *fastReflection_MsgCreateclass) Descriptor() protoreflect.MessageDescriptor {
+	return md_MsgCreateclass
 }
 
 // Type returns the message type, which encapsulates both Go and protobuf
 // type information. If the Go type information is not needed,
 // it is recommended that the message descriptor be used instead.
-func (x *fastReflection_MsgCreateClass) Type() protoreflect.MessageType {
-	return _fastReflection_MsgCreateClass_messageType
+func (x *fastReflection_MsgCreateclass) Type() protoreflect.MessageType {
+	return _fastReflection_MsgCreateclass_messageType
 }
 
 // New returns a newly allocated and mutable empty message.
-func (x *fastReflection_MsgCreateClass) New() protoreflect.Message {
-	return new(fastReflection_MsgCreateClass)
+func (x *fastReflection_MsgCreateclass) New() protoreflect.Message {
+	return new(fastReflection_MsgCreateclass)
 }
 
 // Interface unwraps the message reflection interface and
 // returns the underlying ProtoMessage interface.
-func (x *fastReflection_MsgCreateClass) Interface() protoreflect.ProtoMessage {
-	return (*MsgCreateClass)(x)
+func (x *fastReflection_MsgCreateclass) Interface() protoreflect.ProtoMessage {
+	return (*MsgCreateclass)(x)
 }
 
 // Range iterates over every populated field in an undefined order,
@@ -1072,52 +1072,52 @@ func (x *fastReflection_MsgCreateClass) Interface() protoreflect.ProtoMessage {
 // Range returns immediately if f returns false.
 // While iterating, mutating operations may only be performed
 // on the current field descriptor.
-func (x *fastReflection_MsgCreateClass) Range(f func(protoreflect.FieldDescriptor, protoreflect.Value) bool) {
+func (x *fastReflection_MsgCreateclass) Range(f func(protoreflect.FieldDescriptor, protoreflect.Value) bool) {
 	if x.Sender != "" {
 		value := protoreflect.ValueOfString(x.Sender)
-		if !f(fd_MsgCreateClass_sender, value) {
+		if !f(fd_MsgCreateclass_sender, value) {
 			return
 		}
 	}
 	if x.Id != "" {
 		value := protoreflect.ValueOfString(x.Id)
-		if !f(fd_MsgCreateClass_id, value) {
+		if !f(fd_MsgCreateclass_id, value) {
 			return
 		}
 	}
 	if x.Name != "" {
 		value := protoreflect.ValueOfString(x.Name)
-		if !f(fd_MsgCreateClass_name, value) {
+		if !f(fd_MsgCreateclass_name, value) {
 			return
 		}
 	}
 	if x.Symbol != "" {
 		value := protoreflect.ValueOfString(x.Symbol)
-		if !f(fd_MsgCreateClass_symbol, value) {
+		if !f(fd_MsgCreateclass_symbol, value) {
 			return
 		}
 	}
 	if x.Description != "" {
 		value := protoreflect.ValueOfString(x.Description)
-		if !f(fd_MsgCreateClass_description, value) {
+		if !f(fd_MsgCreateclass_description, value) {
 			return
 		}
 	}
 	if x.Uri != "" {
 		value := protoreflect.ValueOfString(x.Uri)
-		if !f(fd_MsgCreateClass_uri, value) {
+		if !f(fd_MsgCreateclass_uri, value) {
 			return
 		}
 	}
 	if x.UriHash != "" {
 		value := protoreflect.ValueOfString(x.UriHash)
-		if !f(fd_MsgCreateClass_uri_hash, value) {
+		if !f(fd_MsgCreateclass_uri_hash, value) {
 			return
 		}
 	}
 	if x.Data != nil {
 		value := protoreflect.ValueOfMessage(x.Data.ProtoReflect())
-		if !f(fd_MsgCreateClass_data, value) {
+		if !f(fd_MsgCreateclass_data, value) {
 			return
 		}
 	}
@@ -1134,29 +1134,29 @@ func (x *fastReflection_MsgCreateClass) Range(f func(protoreflect.FieldDescripto
 // In other cases (aside from the nullable cases above),
 // a proto3 scalar field is populated if it contains a non-zero value, and
 // a repeated field is populated if it is non-empty.
-func (x *fastReflection_MsgCreateClass) Has(fd protoreflect.FieldDescriptor) bool {
+func (x *fastReflection_MsgCreateclass) Has(fd protoreflect.FieldDescriptor) bool {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
 		return x.Sender != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
 		return x.Id != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
 		return x.Name != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
 		return x.Symbol != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
 		return x.Description != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
 		return x.Uri != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
 		return x.UriHash != ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		return x.Data != nil
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -1166,29 +1166,29 @@ func (x *fastReflection_MsgCreateClass) Has(fd protoreflect.FieldDescriptor) boo
 // associated with the given field number.
 //
 // Clear is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClass) Clear(fd protoreflect.FieldDescriptor) {
+func (x *fastReflection_MsgCreateclass) Clear(fd protoreflect.FieldDescriptor) {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
 		x.Sender = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
 		x.Id = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
 		x.Name = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
 		x.Symbol = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
 		x.Description = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
 		x.Uri = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
 		x.UriHash = ""
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		x.Data = nil
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -1198,37 +1198,37 @@ func (x *fastReflection_MsgCreateClass) Clear(fd protoreflect.FieldDescriptor) {
 // the default value of a bytes scalar is guaranteed to be a copy.
 // For unpopulated composite types, it returns an empty, read-only view
 // of the value; to obtain a mutable reference, use Mutable.
-func (x *fastReflection_MsgCreateClass) Get(descriptor protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclass) Get(descriptor protoreflect.FieldDescriptor) protoreflect.Value {
 	switch descriptor.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
 		value := x.Sender
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
 		value := x.Id
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
 		value := x.Name
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
 		value := x.Symbol
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
 		value := x.Description
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
 		value := x.Uri
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
 		value := x.UriHash
 		return protoreflect.ValueOfString(value)
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		value := x.Data
 		return protoreflect.ValueOfMessage(value.ProtoReflect())
 	default:
 		if descriptor.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", descriptor.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", descriptor.FullName()))
 	}
 }
 
@@ -1242,29 +1242,29 @@ func (x *fastReflection_MsgCreateClass) Get(descriptor protoreflect.FieldDescrip
 // empty, read-only value, then it panics.
 //
 // Set is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClass) Set(fd protoreflect.FieldDescriptor, value protoreflect.Value) {
+func (x *fastReflection_MsgCreateclass) Set(fd protoreflect.FieldDescriptor, value protoreflect.Value) {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
 		x.Sender = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
 		x.Id = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
 		x.Name = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
 		x.Symbol = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
 		x.Description = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
 		x.Uri = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
 		x.UriHash = value.Interface().(string)
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		x.Data = value.Message().Interface().(*anypb.Any)
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -1278,72 +1278,72 @@ func (x *fastReflection_MsgCreateClass) Set(fd protoreflect.FieldDescriptor, val
 // It panics if the field does not contain a composite type.
 //
 // Mutable is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClass) Mutable(fd protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclass) Mutable(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		if x.Data == nil {
 			x.Data = new(anypb.Any)
 		}
 		return protoreflect.ValueOfMessage(x.Data.ProtoReflect())
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
-		panic(fmt.Errorf("field sender of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
-		panic(fmt.Errorf("field id of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
-		panic(fmt.Errorf("field name of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
-		panic(fmt.Errorf("field symbol of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
-		panic(fmt.Errorf("field description of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
-		panic(fmt.Errorf("field uri of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
-		panic(fmt.Errorf("field uri_hash of message cosmos.nft.v1beta1.MsgCreateClass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
+		panic(fmt.Errorf("field sender of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
+		panic(fmt.Errorf("field id of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
+		panic(fmt.Errorf("field name of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
+		panic(fmt.Errorf("field symbol of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
+		panic(fmt.Errorf("field description of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
+		panic(fmt.Errorf("field uri of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
+		panic(fmt.Errorf("field uri_hash of message cosmos.nft.v1beta1.MsgCreateclass is not mutable"))
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", fd.FullName()))
 	}
 }
 
 // NewField returns a new value that is assignable to the field
 // for the given descriptor. For scalars, this returns the default value.
 // For lists, maps, and messages, this returns a new, empty, mutable value.
-func (x *fastReflection_MsgCreateClass) NewField(fd protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclass) NewField(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClass.sender":
+	case "cosmos.nft.v1beta1.MsgCreateclass.sender":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.id":
+	case "cosmos.nft.v1beta1.MsgCreateclass.id":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.name":
+	case "cosmos.nft.v1beta1.MsgCreateclass.name":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.symbol":
+	case "cosmos.nft.v1beta1.MsgCreateclass.symbol":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.description":
+	case "cosmos.nft.v1beta1.MsgCreateclass.description":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.uri_hash":
+	case "cosmos.nft.v1beta1.MsgCreateclass.uri_hash":
 		return protoreflect.ValueOfString("")
-	case "cosmos.nft.v1beta1.MsgCreateClass.data":
+	case "cosmos.nft.v1beta1.MsgCreateclass.data":
 		m := new(anypb.Any)
 		return protoreflect.ValueOfMessage(m.ProtoReflect())
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClass"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclass"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClass does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclass does not contain field %s", fd.FullName()))
 	}
 }
 
 // WhichOneof reports which field within the oneof is populated,
 // returning nil if none are populated.
 // It panics if the oneof descriptor does not belong to this message.
-func (x *fastReflection_MsgCreateClass) WhichOneof(d protoreflect.OneofDescriptor) protoreflect.FieldDescriptor {
+func (x *fastReflection_MsgCreateclass) WhichOneof(d protoreflect.OneofDescriptor) protoreflect.FieldDescriptor {
 	switch d.FullName() {
 	default:
-		panic(fmt.Errorf("%s is not a oneof field in cosmos.nft.v1beta1.MsgCreateClass", d.FullName()))
+		panic(fmt.Errorf("%s is not a oneof field in cosmos.nft.v1beta1.MsgCreateclass", d.FullName()))
 	}
 	panic("unreachable")
 }
@@ -1351,7 +1351,7 @@ func (x *fastReflection_MsgCreateClass) WhichOneof(d protoreflect.OneofDescripto
 // GetUnknown retrieves the entire list of unknown fields.
 // The caller may only mutate the contents of the RawFields
 // if the mutated bytes are stored back into the message with SetUnknown.
-func (x *fastReflection_MsgCreateClass) GetUnknown() protoreflect.RawFields {
+func (x *fastReflection_MsgCreateclass) GetUnknown() protoreflect.RawFields {
 	return x.unknownFields
 }
 
@@ -1362,7 +1362,7 @@ func (x *fastReflection_MsgCreateClass) GetUnknown() protoreflect.RawFields {
 // An empty RawFields may be passed to clear the fields.
 //
 // SetUnknown is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClass) SetUnknown(fields protoreflect.RawFields) {
+func (x *fastReflection_MsgCreateclass) SetUnknown(fields protoreflect.RawFields) {
 	x.unknownFields = fields
 }
 
@@ -1374,7 +1374,7 @@ func (x *fastReflection_MsgCreateClass) SetUnknown(fields protoreflect.RawFields
 // message type, but the details are implementation dependent.
 // Validity is not part of the protobuf data model, and may not
 // be preserved in marshaling or other operations.
-func (x *fastReflection_MsgCreateClass) IsValid() bool {
+func (x *fastReflection_MsgCreateclass) IsValid() bool {
 	return x != nil
 }
 
@@ -1384,9 +1384,9 @@ func (x *fastReflection_MsgCreateClass) IsValid() bool {
 // The returned methods type is identical to
 // "google.golang.org/protobuf/runtime/protoiface".Methods.
 // Consult the protoiface package documentation for details.
-func (x *fastReflection_MsgCreateClass) ProtoMethods() *protoiface.Methods {
+func (x *fastReflection_MsgCreateclass) ProtoMethods() *protoiface.Methods {
 	size := func(input protoiface.SizeInput) protoiface.SizeOutput {
-		x := input.Message.Interface().(*MsgCreateClass)
+		x := input.Message.Interface().(*MsgCreateclass)
 		if x == nil {
 			return protoiface.SizeOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -1440,7 +1440,7 @@ func (x *fastReflection_MsgCreateClass) ProtoMethods() *protoiface.Methods {
 	}
 
 	marshal := func(input protoiface.MarshalInput) (protoiface.MarshalOutput, error) {
-		x := input.Message.Interface().(*MsgCreateClass)
+		x := input.Message.Interface().(*MsgCreateclass)
 		if x == nil {
 			return protoiface.MarshalOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -1533,7 +1533,7 @@ func (x *fastReflection_MsgCreateClass) ProtoMethods() *protoiface.Methods {
 		}, nil
 	}
 	unmarshal := func(input protoiface.UnmarshalInput) (protoiface.UnmarshalOutput, error) {
-		x := input.Message.Interface().(*MsgCreateClass)
+		x := input.Message.Interface().(*MsgCreateclass)
 		if x == nil {
 			return protoiface.UnmarshalOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -1565,10 +1565,10 @@ func (x *fastReflection_MsgCreateClass) ProtoMethods() *protoiface.Methods {
 			fieldNum := int32(wire >> 3)
 			wireType := int(wire & 0x7)
 			if wireType == 4 {
-				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateClass: wiretype end group for non-group")
+				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateclass: wiretype end group for non-group")
 			}
 			if fieldNum <= 0 {
-				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateClass: illegal tag %d (wire type %d)", fieldNum, wire)
+				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateclass: illegal tag %d (wire type %d)", fieldNum, wire)
 			}
 			switch fieldNum {
 			case 1:
@@ -1867,25 +1867,25 @@ func (x *fastReflection_MsgCreateClass) ProtoMethods() *protoiface.Methods {
 }
 
 var (
-	md_MsgCreateClassResponse          protoreflect.MessageDescriptor
-	fd_MsgCreateClassResponse_class_id protoreflect.FieldDescriptor
+	md_MsgCreateclassResponse          protoreflect.MessageDescriptor
+	fd_MsgCreateclassResponse_class_id protoreflect.FieldDescriptor
 )
 
 func init() {
 	file_cosmos_nft_v1beta1_tx_proto_init()
-	md_MsgCreateClassResponse = File_cosmos_nft_v1beta1_tx_proto.Messages().ByName("MsgCreateClassResponse")
-	fd_MsgCreateClassResponse_class_id = md_MsgCreateClassResponse.Fields().ByName("class_id")
+	md_MsgCreateclassResponse = File_cosmos_nft_v1beta1_tx_proto.Messages().ByName("MsgCreateclassResponse")
+	fd_MsgCreateclassResponse_class_id = md_MsgCreateclassResponse.Fields().ByName("class_id")
 }
 
-var _ protoreflect.Message = (*fastReflection_MsgCreateClassResponse)(nil)
+var _ protoreflect.Message = (*fastReflection_MsgCreateclassResponse)(nil)
 
-type fastReflection_MsgCreateClassResponse MsgCreateClassResponse
+type fastReflection_MsgCreateclassResponse MsgCreateclassResponse
 
-func (x *MsgCreateClassResponse) ProtoReflect() protoreflect.Message {
-	return (*fastReflection_MsgCreateClassResponse)(x)
+func (x *MsgCreateclassResponse) ProtoReflect() protoreflect.Message {
+	return (*fastReflection_MsgCreateclassResponse)(x)
 }
 
-func (x *MsgCreateClassResponse) slowProtoReflect() protoreflect.Message {
+func (x *MsgCreateclassResponse) slowProtoReflect() protoreflect.Message {
 	mi := &file_cosmos_nft_v1beta1_tx_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -1897,43 +1897,43 @@ func (x *MsgCreateClassResponse) slowProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-var _fastReflection_MsgCreateClassResponse_messageType fastReflection_MsgCreateClassResponse_messageType
-var _ protoreflect.MessageType = fastReflection_MsgCreateClassResponse_messageType{}
+var _fastReflection_MsgCreateclassResponse_messageType fastReflection_MsgCreateclassResponse_messageType
+var _ protoreflect.MessageType = fastReflection_MsgCreateclassResponse_messageType{}
 
-type fastReflection_MsgCreateClassResponse_messageType struct{}
+type fastReflection_MsgCreateclassResponse_messageType struct{}
 
-func (x fastReflection_MsgCreateClassResponse_messageType) Zero() protoreflect.Message {
-	return (*fastReflection_MsgCreateClassResponse)(nil)
+func (x fastReflection_MsgCreateclassResponse_messageType) Zero() protoreflect.Message {
+	return (*fastReflection_MsgCreateclassResponse)(nil)
 }
-func (x fastReflection_MsgCreateClassResponse_messageType) New() protoreflect.Message {
-	return new(fastReflection_MsgCreateClassResponse)
+func (x fastReflection_MsgCreateclassResponse_messageType) New() protoreflect.Message {
+	return new(fastReflection_MsgCreateclassResponse)
 }
-func (x fastReflection_MsgCreateClassResponse_messageType) Descriptor() protoreflect.MessageDescriptor {
-	return md_MsgCreateClassResponse
+func (x fastReflection_MsgCreateclassResponse_messageType) Descriptor() protoreflect.MessageDescriptor {
+	return md_MsgCreateclassResponse
 }
 
 // Descriptor returns message descriptor, which contains only the protobuf
 // type information for the message.
-func (x *fastReflection_MsgCreateClassResponse) Descriptor() protoreflect.MessageDescriptor {
-	return md_MsgCreateClassResponse
+func (x *fastReflection_MsgCreateclassResponse) Descriptor() protoreflect.MessageDescriptor {
+	return md_MsgCreateclassResponse
 }
 
 // Type returns the message type, which encapsulates both Go and protobuf
 // type information. If the Go type information is not needed,
 // it is recommended that the message descriptor be used instead.
-func (x *fastReflection_MsgCreateClassResponse) Type() protoreflect.MessageType {
-	return _fastReflection_MsgCreateClassResponse_messageType
+func (x *fastReflection_MsgCreateclassResponse) Type() protoreflect.MessageType {
+	return _fastReflection_MsgCreateclassResponse_messageType
 }
 
 // New returns a newly allocated and mutable empty message.
-func (x *fastReflection_MsgCreateClassResponse) New() protoreflect.Message {
-	return new(fastReflection_MsgCreateClassResponse)
+func (x *fastReflection_MsgCreateclassResponse) New() protoreflect.Message {
+	return new(fastReflection_MsgCreateclassResponse)
 }
 
 // Interface unwraps the message reflection interface and
 // returns the underlying ProtoMessage interface.
-func (x *fastReflection_MsgCreateClassResponse) Interface() protoreflect.ProtoMessage {
-	return (*MsgCreateClassResponse)(x)
+func (x *fastReflection_MsgCreateclassResponse) Interface() protoreflect.ProtoMessage {
+	return (*MsgCreateclassResponse)(x)
 }
 
 // Range iterates over every populated field in an undefined order,
@@ -1941,10 +1941,10 @@ func (x *fastReflection_MsgCreateClassResponse) Interface() protoreflect.ProtoMe
 // Range returns immediately if f returns false.
 // While iterating, mutating operations may only be performed
 // on the current field descriptor.
-func (x *fastReflection_MsgCreateClassResponse) Range(f func(protoreflect.FieldDescriptor, protoreflect.Value) bool) {
+func (x *fastReflection_MsgCreateclassResponse) Range(f func(protoreflect.FieldDescriptor, protoreflect.Value) bool) {
 	if x.ClassId != "" {
 		value := protoreflect.ValueOfString(x.ClassId)
-		if !f(fd_MsgCreateClassResponse_class_id, value) {
+		if !f(fd_MsgCreateclassResponse_class_id, value) {
 			return
 		}
 	}
@@ -1961,15 +1961,15 @@ func (x *fastReflection_MsgCreateClassResponse) Range(f func(protoreflect.FieldD
 // In other cases (aside from the nullable cases above),
 // a proto3 scalar field is populated if it contains a non-zero value, and
 // a repeated field is populated if it is non-empty.
-func (x *fastReflection_MsgCreateClassResponse) Has(fd protoreflect.FieldDescriptor) bool {
+func (x *fastReflection_MsgCreateclassResponse) Has(fd protoreflect.FieldDescriptor) bool {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
 		return x.ClassId != ""
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -1979,15 +1979,15 @@ func (x *fastReflection_MsgCreateClassResponse) Has(fd protoreflect.FieldDescrip
 // associated with the given field number.
 //
 // Clear is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClassResponse) Clear(fd protoreflect.FieldDescriptor) {
+func (x *fastReflection_MsgCreateclassResponse) Clear(fd protoreflect.FieldDescriptor) {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
 		x.ClassId = ""
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -1997,16 +1997,16 @@ func (x *fastReflection_MsgCreateClassResponse) Clear(fd protoreflect.FieldDescr
 // the default value of a bytes scalar is guaranteed to be a copy.
 // For unpopulated composite types, it returns an empty, read-only view
 // of the value; to obtain a mutable reference, use Mutable.
-func (x *fastReflection_MsgCreateClassResponse) Get(descriptor protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclassResponse) Get(descriptor protoreflect.FieldDescriptor) protoreflect.Value {
 	switch descriptor.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
 		value := x.ClassId
 		return protoreflect.ValueOfString(value)
 	default:
 		if descriptor.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", descriptor.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", descriptor.FullName()))
 	}
 }
 
@@ -2020,15 +2020,15 @@ func (x *fastReflection_MsgCreateClassResponse) Get(descriptor protoreflect.Fiel
 // empty, read-only value, then it panics.
 //
 // Set is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClassResponse) Set(fd protoreflect.FieldDescriptor, value protoreflect.Value) {
+func (x *fastReflection_MsgCreateclassResponse) Set(fd protoreflect.FieldDescriptor, value protoreflect.Value) {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
 		x.ClassId = value.Interface().(string)
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", fd.FullName()))
 	}
 }
 
@@ -2042,40 +2042,40 @@ func (x *fastReflection_MsgCreateClassResponse) Set(fd protoreflect.FieldDescrip
 // It panics if the field does not contain a composite type.
 //
 // Mutable is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClassResponse) Mutable(fd protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclassResponse) Mutable(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
-		panic(fmt.Errorf("field class_id of message cosmos.nft.v1beta1.MsgCreateClassResponse is not mutable"))
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
+		panic(fmt.Errorf("field class_id of message cosmos.nft.v1beta1.MsgCreateclassResponse is not mutable"))
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", fd.FullName()))
 	}
 }
 
 // NewField returns a new value that is assignable to the field
 // for the given descriptor. For scalars, this returns the default value.
 // For lists, maps, and messages, this returns a new, empty, mutable value.
-func (x *fastReflection_MsgCreateClassResponse) NewField(fd protoreflect.FieldDescriptor) protoreflect.Value {
+func (x *fastReflection_MsgCreateclassResponse) NewField(fd protoreflect.FieldDescriptor) protoreflect.Value {
 	switch fd.FullName() {
-	case "cosmos.nft.v1beta1.MsgCreateClassResponse.class_id":
+	case "cosmos.nft.v1beta1.MsgCreateclassResponse.class_id":
 		return protoreflect.ValueOfString("")
 	default:
 		if fd.IsExtension() {
-			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateClassResponse"))
+			panic(fmt.Errorf("proto3 declared messages do not support extensions: cosmos.nft.v1beta1.MsgCreateclassResponse"))
 		}
-		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateClassResponse does not contain field %s", fd.FullName()))
+		panic(fmt.Errorf("message cosmos.nft.v1beta1.MsgCreateclassResponse does not contain field %s", fd.FullName()))
 	}
 }
 
 // WhichOneof reports which field within the oneof is populated,
 // returning nil if none are populated.
 // It panics if the oneof descriptor does not belong to this message.
-func (x *fastReflection_MsgCreateClassResponse) WhichOneof(d protoreflect.OneofDescriptor) protoreflect.FieldDescriptor {
+func (x *fastReflection_MsgCreateclassResponse) WhichOneof(d protoreflect.OneofDescriptor) protoreflect.FieldDescriptor {
 	switch d.FullName() {
 	default:
-		panic(fmt.Errorf("%s is not a oneof field in cosmos.nft.v1beta1.MsgCreateClassResponse", d.FullName()))
+		panic(fmt.Errorf("%s is not a oneof field in cosmos.nft.v1beta1.MsgCreateclassResponse", d.FullName()))
 	}
 	panic("unreachable")
 }
@@ -2083,7 +2083,7 @@ func (x *fastReflection_MsgCreateClassResponse) WhichOneof(d protoreflect.OneofD
 // GetUnknown retrieves the entire list of unknown fields.
 // The caller may only mutate the contents of the RawFields
 // if the mutated bytes are stored back into the message with SetUnknown.
-func (x *fastReflection_MsgCreateClassResponse) GetUnknown() protoreflect.RawFields {
+func (x *fastReflection_MsgCreateclassResponse) GetUnknown() protoreflect.RawFields {
 	return x.unknownFields
 }
 
@@ -2094,7 +2094,7 @@ func (x *fastReflection_MsgCreateClassResponse) GetUnknown() protoreflect.RawFie
 // An empty RawFields may be passed to clear the fields.
 //
 // SetUnknown is a mutating operation and unsafe for concurrent use.
-func (x *fastReflection_MsgCreateClassResponse) SetUnknown(fields protoreflect.RawFields) {
+func (x *fastReflection_MsgCreateclassResponse) SetUnknown(fields protoreflect.RawFields) {
 	x.unknownFields = fields
 }
 
@@ -2106,7 +2106,7 @@ func (x *fastReflection_MsgCreateClassResponse) SetUnknown(fields protoreflect.R
 // message type, but the details are implementation dependent.
 // Validity is not part of the protobuf data model, and may not
 // be preserved in marshaling or other operations.
-func (x *fastReflection_MsgCreateClassResponse) IsValid() bool {
+func (x *fastReflection_MsgCreateclassResponse) IsValid() bool {
 	return x != nil
 }
 
@@ -2116,9 +2116,9 @@ func (x *fastReflection_MsgCreateClassResponse) IsValid() bool {
 // The returned methods type is identical to
 // "google.golang.org/protobuf/runtime/protoiface".Methods.
 // Consult the protoiface package documentation for details.
-func (x *fastReflection_MsgCreateClassResponse) ProtoMethods() *protoiface.Methods {
+func (x *fastReflection_MsgCreateclassResponse) ProtoMethods() *protoiface.Methods {
 	size := func(input protoiface.SizeInput) protoiface.SizeOutput {
-		x := input.Message.Interface().(*MsgCreateClassResponse)
+		x := input.Message.Interface().(*MsgCreateclassResponse)
 		if x == nil {
 			return protoiface.SizeOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -2144,7 +2144,7 @@ func (x *fastReflection_MsgCreateClassResponse) ProtoMethods() *protoiface.Metho
 	}
 
 	marshal := func(input protoiface.MarshalInput) (protoiface.MarshalOutput, error) {
-		x := input.Message.Interface().(*MsgCreateClassResponse)
+		x := input.Message.Interface().(*MsgCreateclassResponse)
 		if x == nil {
 			return protoiface.MarshalOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -2181,7 +2181,7 @@ func (x *fastReflection_MsgCreateClassResponse) ProtoMethods() *protoiface.Metho
 		}, nil
 	}
 	unmarshal := func(input protoiface.UnmarshalInput) (protoiface.UnmarshalOutput, error) {
-		x := input.Message.Interface().(*MsgCreateClassResponse)
+		x := input.Message.Interface().(*MsgCreateclassResponse)
 		if x == nil {
 			return protoiface.UnmarshalOutput{
 				NoUnkeyedLiterals: input.NoUnkeyedLiterals,
@@ -2213,10 +2213,10 @@ func (x *fastReflection_MsgCreateClassResponse) ProtoMethods() *protoiface.Metho
 			fieldNum := int32(wire >> 3)
 			wireType := int(wire & 0x7)
 			if wireType == 4 {
-				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateClassResponse: wiretype end group for non-group")
+				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateclassResponse: wiretype end group for non-group")
 			}
 			if fieldNum <= 0 {
-				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateClassResponse: illegal tag %d (wire type %d)", fieldNum, wire)
+				return protoiface.UnmarshalOutput{NoUnkeyedLiterals: input.NoUnkeyedLiterals, Flags: input.Flags}, fmt.Errorf("proto: MsgCreateclassResponse: illegal tag %d (wire type %d)", fieldNum, wire)
 			}
 			switch fieldNum {
 			case 1:
@@ -2390,8 +2390,8 @@ func (*MsgSendResponse) Descriptor() ([]byte, []int) {
 	return file_cosmos_nft_v1beta1_tx_proto_rawDescGZIP(), []int{1}
 }
 
-// MsgCreateClass is the request type for creating a new NFT Class.
-type MsgCreateClass struct {
+// MsgCreateclass is the request type for creating a new NFT Class.
+type MsgCreateclass struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -2413,8 +2413,8 @@ type MsgCreateClass struct {
 	Data *anypb.Any `protobuf:"bytes,8,opt,name=data,proto3" json:"data,omitempty"`
 }
 
-func (x *MsgCreateClass) Reset() {
-	*x = MsgCreateClass{}
+func (x *MsgCreateclass) Reset() {
+	*x = MsgCreateclass{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_cosmos_nft_v1beta1_tx_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -2422,86 +2422,86 @@ func (x *MsgCreateClass) Reset() {
 	}
 }
 
-func (x *MsgCreateClass) String() string {
+func (x *MsgCreateclass) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*MsgCreateClass) ProtoMessage() {}
+func (*MsgCreateclass) ProtoMessage() {}
 
-// Deprecated: Use MsgCreateClass.ProtoReflect.Descriptor instead.
-func (*MsgCreateClass) Descriptor() ([]byte, []int) {
+// Deprecated: Use MsgCreateclass.ProtoReflect.Descriptor instead.
+func (*MsgCreateclass) Descriptor() ([]byte, []int) {
 	return file_cosmos_nft_v1beta1_tx_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *MsgCreateClass) GetSender() string {
+func (x *MsgCreateclass) GetSender() string {
 	if x != nil {
 		return x.Sender
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetId() string {
+func (x *MsgCreateclass) GetId() string {
 	if x != nil {
 		return x.Id
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetName() string {
+func (x *MsgCreateclass) GetName() string {
 	if x != nil {
 		return x.Name
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetSymbol() string {
+func (x *MsgCreateclass) GetSymbol() string {
 	if x != nil {
 		return x.Symbol
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetDescription() string {
+func (x *MsgCreateclass) GetDescription() string {
 	if x != nil {
 		return x.Description
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetUri() string {
+func (x *MsgCreateclass) GetUri() string {
 	if x != nil {
 		return x.Uri
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetUriHash() string {
+func (x *MsgCreateclass) GetUriHash() string {
 	if x != nil {
 		return x.UriHash
 	}
 	return ""
 }
 
-func (x *MsgCreateClass) GetData() *anypb.Any {
+func (x *MsgCreateclass) GetData() *anypb.Any {
 	if x != nil {
 		return x.Data
 	}
 	return nil
 }
 
-// MsgCreateClassResponse is the response type for the Msg/CreateClass RPC.
-type MsgCreateClassResponse struct {
+// MsgCreateclassResponse is the response type for the Msg/Createclass RPC.
+type MsgCreateclassResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	// The final ID of the new class (could match `MsgCreateClass.id` if you used it directly
+	// The final ID of the new class (could match `MsgCreateclass.id` if you used it directly
 	// or might be an auto-generated ID you produce in your keeper logic).
 	ClassId string `protobuf:"bytes,1,opt,name=class_id,json=classId,proto3" json:"class_id,omitempty"`
 }
 
-func (x *MsgCreateClassResponse) Reset() {
-	*x = MsgCreateClassResponse{}
+func (x *MsgCreateclassResponse) Reset() {
+	*x = MsgCreateclassResponse{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_cosmos_nft_v1beta1_tx_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -2509,18 +2509,18 @@ func (x *MsgCreateClassResponse) Reset() {
 	}
 }
 
-func (x *MsgCreateClassResponse) String() string {
+func (x *MsgCreateclassResponse) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*MsgCreateClassResponse) ProtoMessage() {}
+func (*MsgCreateclassResponse) ProtoMessage() {}
 
-// Deprecated: Use MsgCreateClassResponse.ProtoReflect.Descriptor instead.
-func (*MsgCreateClassResponse) Descriptor() ([]byte, []int) {
+// Deprecated: Use MsgCreateclassResponse.ProtoReflect.Descriptor instead.
+func (*MsgCreateclassResponse) Descriptor() ([]byte, []int) {
 	return file_cosmos_nft_v1beta1_tx_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *MsgCreateClassResponse) GetClassId() string {
+func (x *MsgCreateclassResponse) GetClassId() string {
 	if x != nil {
 		return x.ClassId
 	}
@@ -2550,7 +2550,7 @@ var file_cosmos_nft_v1beta1_tx_proto_rawDesc = []byte{
 	0x74, 0x72, 0x69, 0x6e, 0x67, 0x52, 0x08, 0x72, 0x65, 0x63, 0x65, 0x69, 0x76, 0x65, 0x72, 0x3a,
 	0x0b, 0x82, 0xe7, 0xb0, 0x2a, 0x06, 0x73, 0x65, 0x6e, 0x64, 0x65, 0x72, 0x22, 0x11, 0x0a, 0x0f,
 	0x4d, 0x73, 0x67, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
-	0x84, 0x02, 0x0a, 0x0e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x43, 0x6c, 0x61,
+	0x84, 0x02, 0x0a, 0x0e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x63, 0x6c, 0x61,
 	0x73, 0x73, 0x12, 0x30, 0x0a, 0x06, 0x73, 0x65, 0x6e, 0x64, 0x65, 0x72, 0x18, 0x01, 0x20, 0x01,
 	0x28, 0x09, 0x42, 0x18, 0xd2, 0xb4, 0x2d, 0x14, 0x63, 0x6f, 0x73, 0x6d, 0x6f, 0x73, 0x2e, 0x41,
 	0x64, 0x64, 0x72, 0x65, 0x73, 0x73, 0x53, 0x74, 0x72, 0x69, 0x6e, 0x67, 0x52, 0x06, 0x73, 0x65,
@@ -2567,7 +2567,7 @@ var file_cosmos_nft_v1beta1_tx_proto_rawDesc = []byte{
 	0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2e,
 	0x41, 0x6e, 0x79, 0x52, 0x04, 0x64, 0x61, 0x74, 0x61, 0x3a, 0x0b, 0x82, 0xe7, 0xb0, 0x2a, 0x06,
 	0x73, 0x65, 0x6e, 0x64, 0x65, 0x72, 0x22, 0x33, 0x0a, 0x16, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65,
-	0x61, 0x74, 0x65, 0x43, 0x6c, 0x61, 0x73, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x61, 0x74, 0x65, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
 	0x12, 0x19, 0x0a, 0x08, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x5f, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01,
 	0x28, 0x09, 0x52, 0x07, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x49, 0x64, 0x32, 0xb5, 0x01, 0x0a, 0x03,
 	0x4d, 0x73, 0x67, 0x12, 0x48, 0x0a, 0x04, 0x53, 0x65, 0x6e, 0x64, 0x12, 0x1b, 0x2e, 0x63, 0x6f,
@@ -2575,11 +2575,11 @@ var file_cosmos_nft_v1beta1_tx_proto_rawDesc = []byte{
 	0x2e, 0x4d, 0x73, 0x67, 0x53, 0x65, 0x6e, 0x64, 0x1a, 0x23, 0x2e, 0x63, 0x6f, 0x73, 0x6d, 0x6f,
 	0x73, 0x2e, 0x6e, 0x66, 0x74, 0x2e, 0x76, 0x31, 0x62, 0x65, 0x74, 0x61, 0x31, 0x2e, 0x4d, 0x73,
 	0x67, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x5d, 0x0a,
-	0x0b, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x43, 0x6c, 0x61, 0x73, 0x73, 0x12, 0x22, 0x2e, 0x63,
+	0x0b, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x63, 0x6c, 0x61, 0x73, 0x73, 0x12, 0x22, 0x2e, 0x63,
 	0x6f, 0x73, 0x6d, 0x6f, 0x73, 0x2e, 0x6e, 0x66, 0x74, 0x2e, 0x76, 0x31, 0x62, 0x65, 0x74, 0x61,
-	0x31, 0x2e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x43, 0x6c, 0x61, 0x73, 0x73,
+	0x31, 0x2e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x63, 0x6c, 0x61, 0x73, 0x73,
 	0x1a, 0x2a, 0x2e, 0x63, 0x6f, 0x73, 0x6d, 0x6f, 0x73, 0x2e, 0x6e, 0x66, 0x74, 0x2e, 0x76, 0x31,
-	0x62, 0x65, 0x74, 0x61, 0x31, 0x2e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x43,
+	0x62, 0x65, 0x74, 0x61, 0x31, 0x2e, 0x4d, 0x73, 0x67, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x63,
 	0x6c, 0x61, 0x73, 0x73, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x1a, 0x05, 0x80, 0xe7,
 	0xb0, 0x2a, 0x01, 0x42, 0xbb, 0x01, 0x0a, 0x16, 0x63, 0x6f, 0x6d, 0x2e, 0x63, 0x6f, 0x73, 0x6d,
 	0x6f, 0x73, 0x2e, 0x6e, 0x66, 0x74, 0x2e, 0x76, 0x31, 0x62, 0x65, 0x74, 0x61, 0x31, 0x42, 0x07,
@@ -2612,16 +2612,16 @@ var file_cosmos_nft_v1beta1_tx_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_cosmos_nft_v1beta1_tx_proto_goTypes = []interface{}{
 	(*MsgSend)(nil),                // 0: cosmos.nft.v1beta1.MsgSend
 	(*MsgSendResponse)(nil),        // 1: cosmos.nft.v1beta1.MsgSendResponse
-	(*MsgCreateClass)(nil),         // 2: cosmos.nft.v1beta1.MsgCreateClass
-	(*MsgCreateClassResponse)(nil), // 3: cosmos.nft.v1beta1.MsgCreateClassResponse
+	(*MsgCreateclass)(nil),         // 2: cosmos.nft.v1beta1.MsgCreateclass
+	(*MsgCreateclassResponse)(nil), // 3: cosmos.nft.v1beta1.MsgCreateclassResponse
 	(*anypb.Any)(nil),              // 4: google.protobuf.Any
 }
 var file_cosmos_nft_v1beta1_tx_proto_depIdxs = []int32{
-	4, // 0: cosmos.nft.v1beta1.MsgCreateClass.data:type_name -> google.protobuf.Any
+	4, // 0: cosmos.nft.v1beta1.MsgCreateclass.data:type_name -> google.protobuf.Any
 	0, // 1: cosmos.nft.v1beta1.Msg.Send:input_type -> cosmos.nft.v1beta1.MsgSend
-	2, // 2: cosmos.nft.v1beta1.Msg.CreateClass:input_type -> cosmos.nft.v1beta1.MsgCreateClass
+	2, // 2: cosmos.nft.v1beta1.Msg.Createclass:input_type -> cosmos.nft.v1beta1.MsgCreateclass
 	1, // 3: cosmos.nft.v1beta1.Msg.Send:output_type -> cosmos.nft.v1beta1.MsgSendResponse
-	3, // 4: cosmos.nft.v1beta1.Msg.CreateClass:output_type -> cosmos.nft.v1beta1.MsgCreateClassResponse
+	3, // 4: cosmos.nft.v1beta1.Msg.Createclass:output_type -> cosmos.nft.v1beta1.MsgCreateclassResponse
 	3, // [3:5] is the sub-list for method output_type
 	1, // [1:3] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -2660,7 +2660,7 @@ func file_cosmos_nft_v1beta1_tx_proto_init() {
 			}
 		}
 		file_cosmos_nft_v1beta1_tx_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MsgCreateClass); i {
+			switch v := v.(*MsgCreateclass); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -2672,7 +2672,7 @@ func file_cosmos_nft_v1beta1_tx_proto_init() {
 			}
 		}
 		file_cosmos_nft_v1beta1_tx_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*MsgCreateClassResponse); i {
+			switch v := v.(*MsgCreateclassResponse); i {
 			case 0:
 				return &v.state
 			case 1:

@@ -16,7 +16,7 @@ service Msg {
 
   // New:
   // Createclass defines a method to create a new NFT class (collection).
-  rpc Createclass(MsgCreateClass) returns (MsgCreateClassResponse);
+  rpc Createclass(MsgCreateclass) returns (MsgCreateclassResponse);
 }
 
 // MsgSend represents a message to send a nft from one account to another account.
@@ -38,8 +38,8 @@ message MsgSend {
 // MsgSendResponse defines the Msg/Send response type.
 message MsgSendResponse {}
 
-// MsgCreateClass is the request type for creating a new NFT Class.
-message MsgCreateClass {
+// MsgCreateclass is the request type for creating a new NFT Class.
+message MsgCreateclass {
   // The account creating this class (signer).
   option (cosmos.msg.v1.signer) = "sender";
   string sender                 = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
@@ -66,9 +66,9 @@ message MsgCreateClass {
   google.protobuf.Any data = 8;
 }
 
-// MsgCreateClassResponse is the response type for the Msg/Createclass RPC.
-message MsgCreateClassResponse {
-  // The final ID of the new class (could match `MsgCreateClass.id` if you used it directly
+// MsgCreateclassResponse is the response type for the Msg/Createclass RPC.
+message MsgCreateclassResponse {
+  // The final ID of the new class (could match `MsgCreateclass.id` if you used it directly
   // or might be an auto-generated ID you produce in your keeper logic).
   string class_id = 1;
 }

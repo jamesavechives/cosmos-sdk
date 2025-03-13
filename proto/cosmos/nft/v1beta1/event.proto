@@ -42,8 +42,8 @@ message EventBurn {
   string owner = 3;
 }
 
-// New event: EventCreateClass
-message EventCreateClass {
+// New event: EventCreateclass
+message EventCreateclass {
   // class_id is the newly created class
   string class_id = 1;
 

@@ -223,26 +223,26 @@ func (m *EventBurn) GetOwner() string {
 	return ""
 }
 
-// New event: EventCreateClass
-type EventCreateClass struct {
+// New event: EventCreateclass
+type EventCreateclass struct {
 	// class_id is the newly created class
 	ClassId string `protobuf:"bytes,1,opt,name=class_id,json=classId,proto3" json:"class_id,omitempty"`
 	// creator is the address who created this class
 	Creator string `protobuf:"bytes,2,opt,name=creator,proto3" json:"creator,omitempty"`
 }
 
-func (m *EventCreateClass) Reset()         { *m = EventCreateClass{} }
-func (m *EventCreateClass) String() string { return proto.CompactTextString(m) }
-func (*EventCreateClass) ProtoMessage()    {}
-func (*EventCreateClass) Descriptor() ([]byte, []int) {
+func (m *EventCreateclass) Reset()         { *m = EventCreateclass{} }
+func (m *EventCreateclass) String() string { return proto.CompactTextString(m) }
+func (*EventCreateclass) ProtoMessage()    {}
+func (*EventCreateclass) Descriptor() ([]byte, []int) {
 	return fileDescriptor_49f05440d2b8ed9d, []int{3}
 }
-func (m *EventCreateClass) XXX_Unmarshal(b []byte) error {
+func (m *EventCreateclass) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
-func (m *EventCreateClass) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
+func (m *EventCreateclass) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
 	if deterministic {
-		return xxx_messageInfo_EventCreateClass.Marshal(b, m, deterministic)
+		return xxx_messageInfo_EventCreateclass.Marshal(b, m, deterministic)
 	} else {
 		b = b[:cap(b)]
 		n, err := m.MarshalToSizedBuffer(b)
@@ -252,26 +252,26 @@ func (m *EventCreateClass) XXX_Marshal(b []byte, deterministic bool) ([]byte, er
 		return b[:n], nil
 	}
 }
-func (m *EventCreateClass) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_EventCreateClass.Merge(m, src)
+func (m *EventCreateclass) XXX_Merge(src proto.Message) {
+	xxx_messageInfo_EventCreateclass.Merge(m, src)
 }
-func (m *EventCreateClass) XXX_Size() int {
+func (m *EventCreateclass) XXX_Size() int {
 	return m.Size()
 }
-func (m *EventCreateClass) XXX_DiscardUnknown() {
-	xxx_messageInfo_EventCreateClass.DiscardUnknown(m)
+func (m *EventCreateclass) XXX_DiscardUnknown() {
+	xxx_messageInfo_EventCreateclass.DiscardUnknown(m)
 }
 
-var xxx_messageInfo_EventCreateClass proto.InternalMessageInfo
+var xxx_messageInfo_EventCreateclass proto.InternalMessageInfo
 
-func (m *EventCreateClass) GetClassId() string {
+func (m *EventCreateclass) GetClassId() string {
 	if m != nil {
 		return m.ClassId
 	}
 	return ""
 }
 
-func (m *EventCreateClass) GetCreator() string {
+func (m *EventCreateclass) GetCreator() string {
 	if m != nil {
 		return m.Creator
 	}
@@ -282,13 +282,13 @@ func init() {
 	proto.RegisterType((*EventSend)(nil), "cosmos.nft.v1beta1.EventSend")
 	proto.RegisterType((*EventMint)(nil), "cosmos.nft.v1beta1.EventMint")
 	proto.RegisterType((*EventBurn)(nil), "cosmos.nft.v1beta1.EventBurn")
-	proto.RegisterType((*EventCreateClass)(nil), "cosmos.nft.v1beta1.EventCreateClass")
+	proto.RegisterType((*EventCreateclass)(nil), "cosmos.nft.v1beta1.EventCreateclass")
 }
 
 func init() { proto.RegisterFile("cosmos/nft/v1beta1/event.proto", fileDescriptor_49f05440d2b8ed9d) }
 
 var fileDescriptor_49f05440d2b8ed9d = []byte{
-	// 252 bytes of a gzipped FileDescriptorProto
+	// 251 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x92, 0x4b, 0xce, 0x2f, 0xce,
 	0xcd, 0x2f, 0xd6, 0xcf, 0x4b, 0x2b, 0xd1, 0x2f, 0x33, 0x4c, 0x4a, 0x2d, 0x49, 0x34, 0xd4, 0x4f,
 	0x2d, 0x4b, 0xcd, 0x2b, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x12, 0x82, 0xc8, 0xeb, 0xe5,
@@ -299,12 +299,12 @@ var fileDescriptor_49f05440d2b8ed9d = []byte{
 	0x33, 0x58, 0x0c, 0xca, 0x13, 0x92, 0xe2, 0xe2, 0x28, 0x4a, 0x4d, 0x4e, 0xcd, 0x2c, 0x4b, 0x2d,
 	0x92, 0x60, 0x01, 0xcb, 0xc0, 0xf9, 0x4a, 0x3e, 0x50, 0xbb, 0x7c, 0x33, 0xf3, 0x4a, 0x48, 0xb1,
 	0x4b, 0x84, 0x8b, 0x35, 0xbf, 0x3c, 0x0f, 0x6e, 0x15, 0x84, 0x03, 0x37, 0xcd, 0xa9, 0xb4, 0x28,
-	0x8f, 0x72, 0xd3, 0xdc, 0xb9, 0x04, 0xc0, 0xa6, 0x39, 0x17, 0xa5, 0x26, 0x96, 0xa4, 0x3a, 0x83,
-	0xf4, 0xe2, 0x33, 0x54, 0x82, 0x8b, 0x3d, 0x19, 0xa4, 0x32, 0xbf, 0x08, 0x6a, 0x32, 0x8c, 0xeb,
-	0xa4, 0x73, 0xe2, 0x91, 0x1c, 0xe3, 0x85, 0x47, 0x72, 0x8c, 0x0f, 0x1e, 0xc9, 0x31, 0x4e, 0x78,
-	0x2c, 0xc7, 0x70, 0xe1, 0xb1, 0x1c, 0xc3, 0x8d, 0xc7, 0x72, 0x0c, 0x51, 0xd0, 0xe0, 0x2f, 0x4e,
-	0xc9, 0xd6, 0xcb, 0xcc, 0xd7, 0xaf, 0x00, 0x45, 0x53, 0x12, 0x1b, 0x38, 0x66, 0x8c, 0x01, 0x01,
-	0x00, 0x00, 0xff, 0xff, 0x77, 0x40, 0x3f, 0x35, 0xbb, 0x01, 0x00, 0x00,
+	0x8f, 0x72, 0xd3, 0xdc, 0xb9, 0x04, 0xc0, 0xa6, 0x39, 0x17, 0xa5, 0x26, 0x96, 0xa4, 0x82, 0xf5,
+	0xe2, 0x33, 0x54, 0x82, 0x8b, 0x3d, 0x19, 0xa4, 0x32, 0xbf, 0x08, 0x6a, 0x32, 0x8c, 0xeb, 0xa4,
+	0x73, 0xe2, 0x91, 0x1c, 0xe3, 0x85, 0x47, 0x72, 0x8c, 0x0f, 0x1e, 0xc9, 0x31, 0x4e, 0x78, 0x2c,
+	0xc7, 0x70, 0xe1, 0xb1, 0x1c, 0xc3, 0x8d, 0xc7, 0x72, 0x0c, 0x51, 0xd0, 0xe0, 0x2f, 0x4e, 0xc9,
+	0xd6, 0xcb, 0xcc, 0xd7, 0xaf, 0x00, 0x45, 0x53, 0x12, 0x1b, 0x38, 0x66, 0x8c, 0x01, 0x01, 0x00,
+	0x00, 0xff, 0xff, 0xd2, 0x58, 0x8c, 0xbc, 0xbb, 0x01, 0x00, 0x00,
 }
 
 func (m *EventSend) Marshal() (dAtA []byte, err error) {
@@ -446,7 +446,7 @@ func (m *EventBurn) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	return len(dAtA) - i, nil
 }
 
-func (m *EventCreateClass) Marshal() (dAtA []byte, err error) {
+func (m *EventCreateclass) Marshal() (dAtA []byte, err error) {
 	size := m.Size()
 	dAtA = make([]byte, size)
 	n, err := m.MarshalToSizedBuffer(dAtA[:size])
@@ -456,12 +456,12 @@ func (m *EventCreateClass) Marshal() (dAtA []byte, err error) {
 	return dAtA[:n], nil
 }
 
-func (m *EventCreateClass) MarshalTo(dAtA []byte) (int, error) {
+func (m *EventCreateclass) MarshalTo(dAtA []byte) (int, error) {
 	size := m.Size()
 	return m.MarshalToSizedBuffer(dAtA[:size])
 }
 
-func (m *EventCreateClass) MarshalToSizedBuffer(dAtA []byte) (int, error) {
+func (m *EventCreateclass) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	i := len(dAtA)
 	_ = i
 	var l int
@@ -561,7 +561,7 @@ func (m *EventBurn) Size() (n int) {
 	return n
 }
 
-func (m *EventCreateClass) Size() (n int) {
+func (m *EventCreateclass) Size() (n int) {
 	if m == nil {
 		return 0
 	}
@@ -1054,7 +1054,7 @@ func (m *EventBurn) Unmarshal(dAtA []byte) error {
 	}
 	return nil
 }
-func (m *EventCreateClass) Unmarshal(dAtA []byte) error {
+func (m *EventCreateclass) Unmarshal(dAtA []byte) error {
 	l := len(dAtA)
 	iNdEx := 0
 	for iNdEx < l {
@@ -1077,10 +1077,10 @@ func (m *EventCreateClass) Unmarshal(dAtA []byte) error {
 		fieldNum := int32(wire >> 3)
 		wireType := int(wire & 0x7)
 		if wireType == 4 {
-			return fmt.Errorf("proto: EventCreateClass: wiretype end group for non-group")
+			return fmt.Errorf("proto: EventCreateclass: wiretype end group for non-group")
 		}
 		if fieldNum <= 0 {
-			return fmt.Errorf("proto: EventCreateClass: illegal tag %d (wire type %d)", fieldNum, wire)
+			return fmt.Errorf("proto: EventCreateclass: illegal tag %d (wire type %d)", fieldNum, wire)
 		}
 		switch fieldNum {
 		case 1:
