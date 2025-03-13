@@ -41,3 +41,12 @@ message EventBurn {
   // owner is the owner address of the nft
   string owner = 3;
 }
+
+// New event: EventCreateClass
+message EventCreateClass {
+  // class_id is the newly created class
+  string class_id = 1;
+
+  // creator is the address who created this class
+  string creator = 2;
+}
