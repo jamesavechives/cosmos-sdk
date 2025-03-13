@@ -19,7 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Msg_Send_FullMethodName = "/cosmos.nft.v1beta1.Msg/Send"
+	Msg_Send_FullMethodName        = "/cosmos.nft.v1beta1.Msg/Send"
+	Msg_CreateClass_FullMethodName = "/cosmos.nft.v1beta1.Msg/CreateClass"
 )
 
 // MsgClient is the client API for Msg service.
@@ -30,6 +31,9 @@ const (
 type MsgClient interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOption) (*MsgSendResponse, error)
+	// New:
+	// CreateClass defines a method to create a new NFT class (collection).
+	CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error)
 }
 
 type msgClient struct {
@@ -50,6 +54,16 @@ func (c *msgClient) Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOpti
 	return out, nil
 }
 
+func (c *msgClient) CreateClass(ctx context.Context, in *MsgCreateClass, opts ...grpc.CallOption) (*MsgCreateClassResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(MsgCreateClassResponse)
+	err := c.cc.Invoke(ctx, Msg_CreateClass_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // MsgServer is the server API for Msg service.
 // All implementations must embed UnimplementedMsgServer
 // for forward compatibility.
@@ -58,6 +72,9 @@ func (c *msgClient) Send(ctx context.Context, in *MsgSend, opts ...grpc.CallOpti
 type MsgServer interface {
 	// Send defines a method to send a nft from one account to another account.
 	Send(context.Context, *MsgSend) (*MsgSendResponse, error)
+	// New:
+	// CreateClass defines a method to create a new NFT class (collection).
+	CreateClass(context.Context, *MsgCreateClass) (*MsgCreateClassResponse, error)
 	mustEmbedUnimplementedMsgServer()
 }
 
@@ -70,6 +87,9 @@ type UnimplementedMsgServer struct{}
 
 func (UnimplementedMsgServer) Send(context.Context, *MsgSend) (*MsgSendResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Send not implemented")
+}
+func (UnimplementedMsgServer) CreateClass(context.Context, *MsgCreateClass) (*MsgCreateClassResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreateClass not implemented")
 }
 func (UnimplementedMsgServer) mustEmbedUnimplementedMsgServer() {}
 func (UnimplementedMsgServer) testEmbeddedByValue()             {}
@@ -110,6 +130,24 @@ func _Msg_Send_Handler(srv interface{}, ctx context.Context, dec func(interface{
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Msg_CreateClass_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(MsgCreateClass)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(MsgServer).CreateClass(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Msg_CreateClass_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(MsgServer).CreateClass(ctx, req.(*MsgCreateClass))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Msg_ServiceDesc is the grpc.ServiceDesc for Msg service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -120,6 +158,10 @@ var Msg_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Send",
 			Handler:    _Msg_Send_Handler,
+		},
+		{
+			MethodName: "CreateClass",
+			Handler:    _Msg_CreateClass_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
