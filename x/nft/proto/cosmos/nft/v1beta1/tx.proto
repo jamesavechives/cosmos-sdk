@@ -1,0 +1,74 @@
+syntax = "proto3";
+package cosmos.nft.v1beta1;
+
+option go_package = "cosmossdk.io/x/nft";
+
+import "cosmos_proto/cosmos.proto";
+import "cosmos/msg/v1/msg.proto";
+import "google/protobuf/any.proto";
+
+// Msg defines the nft Msg service.
+service Msg {
+  option (cosmos.msg.v1.service) = true;
+
+  // Send defines a method to send a nft from one account to another account.
+  rpc Send(MsgSend) returns (MsgSendResponse);
+
+  // New:
+  // CreateClass defines a method to create a new NFT class (collection).
+  rpc CreateClass(MsgCreateClass) returns (MsgCreateClassResponse);
+}
+
+// MsgSend represents a message to send a nft from one account to another account.
+message MsgSend {
+  option (cosmos.msg.v1.signer) = "sender";
+
+  // class_id defines the unique identifier of the nft classification, similar to the contract address of ERC721
+  string class_id = 1;
+
+  // id defines the unique identification of nft
+  string id = 2;
+
+  // sender is the address of the owner of nft
+  string sender = 3 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+
+  // receiver is the receiver address of nft
+  string receiver = 4 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+}
+// MsgSendResponse defines the Msg/Send response type.
+message MsgSendResponse {}
+
+// MsgCreateClass is the request type for creating a new NFT Class.
+message MsgCreateClass {
+  // The account creating this class (signer).
+  option (cosmos.msg.v1.signer) = "sender";
+  string sender                 = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+
+  // The unique identifier of the new class. Optional if you want to auto-generate.
+  string id = 2;
+
+  // name defines the human-readable name of the NFT classification.
+  string name = 3;
+
+  // symbol is an abbreviated name for NFT classification.
+  string symbol = 4;
+
+  // description is a brief description of this NFT class.
+  string description = 5;
+
+  // uri for the class metadata stored off chain.
+  string uri = 6;
+
+  // uri_hash is a hash of the document pointed by uri.
+  string uri_hash = 7;
+
+  // data is the app specific metadata of the NFT class. Optional
+  google.protobuf.Any data = 8;
+}
+
+// MsgCreateClassResponse is the response type for the Msg/CreateClass RPC.
+message MsgCreateClassResponse {
+  // The final ID of the new class (could match `MsgCreateClass.id` if you used it directly
+  // or might be an auto-generated ID you produce in your keeper logic).
+  string class_id = 1;
+}
