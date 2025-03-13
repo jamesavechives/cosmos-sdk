@@ -95,6 +95,27 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					},
 					// Sender is the signer of the transaction and is automatically added as from flag by AutoCLI.
 				},
+				{
+					RpcMethod: "CreateClass",
+					Use:       "create-class <name> <symbol> [description] [uri] [uri-hash]",
+					Short:     "Create a new NFT class (collection)",
+					Example:   fmt.Sprintf(`%s tx %s create-class "MyNFT" "MYNFT" "Some description" --uri="https://example.com" --uri-hash="abc123" --from <sender>`, version.AppName, nft.ModuleName),
+					// The sender is inferred from the --from flag, so we do NOT include it as a positional arg.
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{
+						// Match fields in the exact order they appear in the method’s request type.
+						// name:
+						{ProtoField: "name"},
+						// symbol:
+						{ProtoField: "symbol"},
+						// description, uri, uri_hash can be optional. You can put them as positional or flags.
+						// For example, let's treat 'description' as a required positional arg:
+						{ProtoField: "description", Optional: true},
+						// Then 'uri' and 'uri_hash' as optional as well.
+						{ProtoField: "uri", Optional: true},
+						// uri_hash is optional
+						{ProtoField: "uri_hash", Optional: true},
+					},
+				},
 			},
 		},
 	}

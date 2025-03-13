@@ -12,4 +12,8 @@ var (
 	ErrNFTNotExists   = errors.Register(ModuleName, 6, "nft does not exist")
 	ErrEmptyClassID   = errors.Register(ModuleName, 7, "empty class id")
 	ErrEmptyNFTID     = errors.Register(ModuleName, 8, "empty nft id")
+
+	// New errors for empty class name/symbol:
+	ErrEmptyClassName   = errors.Register(ModuleName, 101, "class name cannot be empty")
+	ErrEmptyClassSymbol = errors.Register(ModuleName, 102, "class symbol cannot be empty")
 )
