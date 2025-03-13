@@ -96,7 +96,7 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					// Sender is the signer of the transaction and is automatically added as from flag by AutoCLI.
 				},
 				{
-					RpcMethod: "CreateClass",
+					RpcMethod: "Createclass",
 					Use:       "create-class <name> <symbol> [description] [uri] [uri-hash]",
 					Short:     "Create a new NFT class (collection)",
 					Example:   fmt.Sprintf(`%s tx %s create-class "MyNFT" "MYNFT" "Some description" --uri="https://example.com" --uri-hash="abc123" --from <sender>`, version.AppName, nft.ModuleName),

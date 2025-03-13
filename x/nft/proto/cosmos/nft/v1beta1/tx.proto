@@ -15,8 +15,8 @@ service Msg {
   rpc Send(MsgSend) returns (MsgSendResponse);
 
   // New:
-  // CreateClass defines a method to create a new NFT class (collection).
-  rpc CreateClass(MsgCreateClass) returns (MsgCreateClassResponse);
+  // Createclass defines a method to create a new NFT class (collection).
+  rpc Createclass(MsgCreateClass) returns (MsgCreateClassResponse);
 }
 
 // MsgSend represents a message to send a nft from one account to another account.
@@ -66,7 +66,7 @@ message MsgCreateClass {
   google.protobuf.Any data = 8;
 }
 
-// MsgCreateClassResponse is the response type for the Msg/CreateClass RPC.
+// MsgCreateClassResponse is the response type for the Msg/Createclass RPC.
 message MsgCreateClassResponse {
   // The final ID of the new class (could match `MsgCreateClass.id` if you used it directly
   // or might be an auto-generated ID you produce in your keeper logic).
