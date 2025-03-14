@@ -53,7 +53,7 @@ func (k Keeper) Send(goCtx context.Context, msg *nft.MsgSend) (*nft.MsgSendRespo
 }
 
 // / CreateClass implements the MsgServer interface for creating a new Class.
-func (k Keeper) CreateClass(ctx context.Context, msg *nft.MsgCreateclass) (*nft.MsgCreateclassResponse, error) {
+func (k Keeper) Createclass(ctx context.Context, msg *nft.MsgCreateclass) (*nft.MsgCreateclassResponse, error) {
 	// 1. Validate basic fields
 	if len(msg.Name) == 0 {
 		return nil, nft.ErrEmptyClassName
